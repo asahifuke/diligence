@@ -6,8 +6,8 @@ export class Miteras {
   constructor(username, password, feeling) {
     this.username = username
     this.password = password
-    this.feeling  = feeling
     this.driver   = new Builder().forBrowser('chrome').build();
+    this.feeling  = feeling
   }
 
   async punchIn(){
@@ -16,7 +16,10 @@ export class Miteras {
   }
 
   async dragAndDrop(to) {
-    await this.driver.actions().dragAndDrop(this.feeling, to).build().perform();
+    await this.driver.actions().dragAndDrop(
+      this.driver.findElement(By.id(this.feeling)),
+      to
+    ).build().perform();
   }
 
   async #login() {
