@@ -21,6 +21,7 @@ class Diligence {
   static #parse() {
     program
       .option("-o, --goToOffice")
+      .option("-r, --retirement")
       .parse(process.argv)
   }
 
