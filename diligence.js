@@ -3,7 +3,7 @@ import { Retirement } from './retirement.js'
 import { Slack } from './slack.js'
 import { program } from 'commander'
 
-class Diligence {
+export class Diligence {
   constructor (options, username, password, feeling, slackUri, message) {
     this.options = options
     this.username = username

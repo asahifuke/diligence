@@ -19,7 +19,7 @@
     "node-fetch": "^3.2.10"
   },
   "type": "module",
-  "name": "attendance",
+  "name": "diligence",
   "version": "1.0.0",
   "main": "miteras.js",
   "keywords": [],
