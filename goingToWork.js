@@ -1,5 +1,4 @@
 import { Miteras } from './miteras.js';
-import { By } from 'selenium-webdriver';
 
 export class GoingToWork extends Miteras {
   constructor(username, password, feeling) {
@@ -7,7 +6,6 @@ export class GoingToWork extends Miteras {
   }
 
   async dragAndDrop() {
-    const to = await this.driver.findElement(By.id('cico-clock-in-button'))
-    await super.dragAndDrop(await to)
+    await super.dragAndDrop('cico-clock-in-button')
   }
 }

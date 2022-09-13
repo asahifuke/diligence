@@ -1,7 +1,7 @@
 import { Builder, By, Key } from 'selenium-webdriver';
 
 export class Miteras {
-  #uri    = 'https://kintai.miteras.jp/A319971/login'
+  #uri = 'https://kintai.miteras.jp/A319971/login'
 
   constructor(username, password, feeling) {
     this.username = username
@@ -15,11 +15,11 @@ export class Miteras {
     await this.dragAndDrop()
   }
 
-  async dragAndDrop(to) {
-    await this.driver.actions().dragAndDrop(
-      this.driver.findElement(By.id(this.feeling)),
-      to
-    ).build().perform();
+  async dragAndDrop(droppable) {
+    await this.driver.actions({async: true}).dragAndDrop(
+      await this.driver.findElement(By.id(this.feeling)),
+      await this.driver.findElement(By.id(droppable))
+    ).perform()
   }
 
   async #login() {

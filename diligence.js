@@ -72,4 +72,5 @@ class Diligence {
     )
   }
 }
+
 Diligence.start()
