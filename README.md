@@ -34,6 +34,6 @@
 diligence.js [-o -r]  [MiterasLoginUsername] [MiterasLoginPassword] [FeeilingImage] [SlackApiUri] [message]
 ```
 - 出勤時は-o、退勤時は-rを渡してください。
-- FeelingImageは、、最も調子が良いの場合は、Image-1、調子が良い場合は、Image-2、普通の場合は、- Image-3、悲しい場合は、Image-4を渡してください。
+- FeelingImageは、、最も調子が良いの場合は、1、調子が良い場合は、2、普通の場合は、- 3、悲しい場合は、4を渡してください。
 - SlackApiUriは、※1を入力してください。
 - messageは、Slackに送信するメッセージを送信してください。

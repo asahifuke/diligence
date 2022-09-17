@@ -1,11 +1,7 @@
 import { Miteras } from './miteras.js'
 
 export class GoingToWork extends Miteras {
-  // async moveToElement () {
-  //   await super.moveToElement('cico-clock-in-button')
-  // }
-
-  async dragAndDrop () {
-    await super.dragAndDrop('cico-clock-in-button')
+  async sendRequest () {
+    super.sendRequest('https://kintai.miteras.jp/A319971/submitClockIn')
   }
 }
