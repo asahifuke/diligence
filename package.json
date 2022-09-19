@@ -20,7 +20,7 @@
   },
   "type": "module",
   "name": "diligence-miteras",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "bin": {
     "diligence": "bin/diligence.js"
   },
