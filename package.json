@@ -19,9 +19,11 @@
     "node-fetch": "^3.2.10"
   },
   "type": "module",
-  "name": "diligence",
-  "version": "1.0.0",
-  "main": "miteras.js",
+  "name": "diligence-miteras",
+  "version": "0.1.0",
+  "bin": {
+    "diligence": "bin/diligence.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -1,6 +1,9 @@
-import { GoingToWork } from './goingToWork.js'
-import { Retirement } from './retirement.js'
-import { Slack } from './slack.js'
+#!/usr/bin/env node
+'use strict'
+
+import { GoingToWork } from '../src/goingToWork.js'
+import { Retirement } from '../src/retirement.js'
+import { Slack } from '../src/slack.js'
 import { program } from 'commander'
 
 export class Diligence {
